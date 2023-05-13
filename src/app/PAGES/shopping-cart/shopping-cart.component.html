@@ -1,0 +1,70 @@
+<br>
+<div class="shopping_cart_container">
+    <!-- product -->
+    <ng-container *ngFor="let item of shoppingCartItems" class="">
+
+        <mat-card class="container_product_mat">
+            <div class="container_product">
+                <img src={{item.photo}} alt="Imagen del producto">
+                <h3><a>{{item.title}}</a></h3>
+            <!-- boton a implementar cuando sepa como hacerlo. Boton de agregar o reducir la cantidad del mismo producto -->
+                <ng-template>
+                    <div class="container_product_add_more">
+                        <button>-</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                </ng-template>
+                <span class="product_price">${{item.price}}</span>
+                <mat-icon class="delete_icon">delete_forever</mat-icon>
+            </div>
+        </mat-card>
+</ng-container>
+    <!-- product -->
+    <mat-card class="container_envio">
+        <img src="https://compragamer.com/PatchRouterSection/assets/img/envioGamerOld.png" alt="Logo compra gamer" class="image_logo">
+        <mat-radio-group aria-label="Select an option" class="envio_oca">
+            <div class="radio_container">
+                <span>Correo Oca</span>
+                <mat-radio-button value="1">Domicilio</mat-radio-button>
+                <mat-radio-button value="2">Sucursal</mat-radio-button>
+            </div>
+            <div class="radio_container">
+                <span>Correo Andreani</span>
+                <mat-radio-button value="3">Domicilio</mat-radio-button>
+                <mat-radio-button value="4">Sucursal</mat-radio-button>
+            </div>
+            <div class="radio_container">
+                <span>Mensajeria</span>
+                <mat-radio-button value="5">Domicilio</mat-radio-button>
+            </div>
+        </mat-radio-group>
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>codigo postal</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>local_shipping</mat-icon>
+        </mat-form-field>
+    </mat-card>
+    <mat-card class="container_descuento">
+        <img src="https://compragamer.com/PatchRouterSection/assets/img/logo-promo.png" alt="Logo compra gamer" class="image_logo">
+        <mat-form-field appearance="outline" color="warn">
+            <mat-label>codigo de descuento</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-icon matSuffix>local_offer</mat-icon>
+        </mat-form-field>
+        <button class="btn accept-btn">aceptar</button>
+    </mat-card>
+    <mat-card class="container_pago">
+        <img src="https://compragamer.com/PatchRouterSection/assets/img/pgold.png" alt="logo compra gamer" class="image_logo">
+        <mat-radio-group aria-label="Select an option" class="envio_oca radio_container">
+            <mat-radio-button value="1">Deposito o transferencia</mat-radio-button>
+            <mat-radio-button value="2">Mercado pago - Tarjetas Online, PagoFacil, RapiPago</mat-radio-button>
+            <mat-radio-button value="3">Pago Gamer - Tarjetas Visa o MasterCard</mat-radio-button>
+        </mat-radio-group>
+        <div class="container_pago_total">
+            <span>Total:</span>
+            <span>${{cart.getTotal()}}</span>
+        </div>
+    </mat-card>
+</div>
+<br>

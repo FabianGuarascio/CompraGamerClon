@@ -1,0 +1,36 @@
+<div class="header">
+    <div class="header_topBar">
+        <!-- logo , input , search icon , button"iniciar sesion", icono carrito -->
+        <a routerLink="home">
+            <img  src="https://compragamer.net/assets/img/logo-fix.png" alt="Compra Gamer Logo" class="header_logo">
+        </a>
+        <div class="header_searchBar">
+            <input type="text" class="header_searchBar_input">
+            <mat-icon>search</mat-icon>
+        </div>
+        <span class="header_signIn_button">
+            <button class="header_button_wrapper">
+                <mat-icon>account_circle</mat-icon>
+                iniciar sesion
+            </button>
+            <span class="header_cart_icon" routerLink="shopping_cart">
+                <mat-icon matBadge={{cart.getShoppingCartLength()}} matBadgeColor="warn">shopping_cart</mat-icon>
+            </span>
+        </span>
+    </div>
+    <!-- <input type="checkbox" id="toggler"> -->
+    <!-- <label for="toggler" class="label_menu"> -->
+        <div id="menubtn" (click)="showElement()">
+            <mat-icon >menu</mat-icon>
+        </div>
+    <!-- </label> -->
+    <div class="header_subBar">
+        <ul class="header_subBar_list">
+            <li><a routerLink="productos">productos</a></li>
+            <li><a routerLink="arma_tu_pc">arma tu pc</a></li>
+            <li><a routerLink="ayuda">ayuda</a></li>
+            <li><a>marca sponsor</a></li>
+        </ul>
+        <!-- ul li ( productos, arma tu pc, ayuda, marcas sponsor) -->
+    </div>
+</div>

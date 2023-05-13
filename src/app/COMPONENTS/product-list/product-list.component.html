@@ -1,0 +1,72 @@
+<div class="productList">
+    <mat-card>
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Equipos y notebooks
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('Notebooks')">-Notebook</a>
+
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Consolas y videojuegos
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('Consolas')">-Consolas</a>
+
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Mothers y combos
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('MotherAmd')">-Mothers amd</a>
+                    <a (click)="cambiar('MotherIntel')">-Mothers intel</a>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Procesadores y coolers cpus
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('ProcesadoresAmd')">-Procesadores amd</a>
+                    <a (click)="cambiar('ProcesadoresIntel')">-Procesadores intel</a>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Placas de video y otras
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('Geforce')">-GeForce</a>
+                    <a (click)="cambiar('Raedon')">-Raedon Amd</a>
+                </div>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Almacenamiento
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="matPanelItems">
+                    <a (click)="cambiar('DiscosRigidos')">-Discos rigidos</a>
+                    <a (click)="cambiar('DiscosSolidos')">-Discos solidos SSD</a>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-card>
+</div>

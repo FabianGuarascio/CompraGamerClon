@@ -1,0 +1,36 @@
+
+h2{
+    font-weight: 300;
+}
+mat-panel-title {
+    font-weight: 300;
+}
+
+.content_title{
+    color: #fd611a;
+}
+
+.cardHelp{
+    margin: 15px 0px 15px;
+}
+.cardHelp_title{
+    color: #fd611a;
+}
+button{
+    background-color: #fd611a;
+    color: white;
+}
+.button_wrapper{
+    background-color: #fd611a;
+    color: white;
+    display: flex;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+
+.button_container{
+    display: flex;
+}

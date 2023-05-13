@@ -1,0 +1,125 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_topBar{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 96%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    gap: 1em;
+}
+.header_searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    min-width: 335px;
+}
+
+.header_searchBar > input{
+    width: 93%;
+    height: 40px;
+}
+
+
+.header_subBar{
+    background-color: #fd611a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.header_subBar_list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: larger;
+    margin-top: 1em;
+}
+.header_signIn_button{
+    
+    /* height: 30px; */
+    display: flex;
+    gap: 0.75em;
+    align-items: center;
+    justify-content: center;
+}
+.header_button_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fd611a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.header_cart_icon{
+    cursor: pointer;
+}
+#toggler, .label_menu{
+    display: none;
+}
+#menubtn{
+    display: none;
+}
+
+/* primer query a los 765 px */
+
+/* segundo query a los 575 px */
+
+
+@media (max-width: 800px) {
+    /* menu */
+    .header_subBar {
+        width: 100%;
+        height: 0em;
+        transition: height 1s;
+
+        overflow: hidden;
+    }
+    /* list */
+    .header_subBar_list{
+        flex-direction: column;
+        align-items: center;
+        padding: 1px;
+        margin-top: 0;
+        gap: 4px;
+    }
+    .label_menu{
+        position: relative;
+        /* right: 45%; */
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        background-color: #fd611a;
+        width: 100%;
+    }
+    #menubtn{
+        position: relative;
+        /* right: 45%; */
+        display: block;
+        align-items: center;
+        cursor: pointer;
+        background-color: #fd611a;
+        width: 100%;
+    }
+
+    
+    .show{
+        height: 10em;
+    }
+  }
+  

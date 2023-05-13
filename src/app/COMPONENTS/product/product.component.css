@@ -1,0 +1,27 @@
+.product{
+    display: flex;
+}
+.span_description{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.product_info_price>span{
+    color: #6c91c7;
+    font-size: 1.3rem;
+}
+.product_info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button{
+    color: white;
+    background-color: #fd611a;
+}
+mat-card{
+    margin: 20px;
+}
+img{
+    margin-right: 15px;
+}

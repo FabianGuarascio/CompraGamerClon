@@ -1,0 +1,29 @@
+.productList{
+    /* width: 30%; */
+    width: 350px;
+}
+
+mat-panel-title{
+    font-weight: 800;
+    font-size: large;
+    
+}
+.matPanelItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: grey;
+    cursor: pointer;
+}
+
+mat-card{
+    background-color: #eeeeee;
+}
+
+
+@media (max-width:1000px) {
+    .productList{
+        width: 100%;
+    }
+    
+}

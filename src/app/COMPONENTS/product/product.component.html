@@ -1,0 +1,26 @@
+<mat-card *ngFor="let item of product">
+    <div class="product">
+        <div class="product_image">
+            <a>
+                <img src="{{item.photo}}" alt="">
+            </a>
+        </div>
+        <div class="product_info">
+            <div class="product_info_name">
+                <a >
+                    <span class="span_description">{{item.title}}</span>
+                </a>
+            </div>
+            <div class="product_info_price">
+                <span>{{item.price | currency:'ARS':'symbol-narrow':'0.0-2'}}</span>
+            </div>
+            <div class="product_info_button">
+                <button class="btn" (click)="cart.addProduct(item)">agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+    
+</mat-card>
+
+
+

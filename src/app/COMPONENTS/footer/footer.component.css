@@ -1,0 +1,64 @@
+svg{
+    width: 3.125rem;
+    margin: 0.2rem;
+    color: #eeeeee;
+
+}
+img{
+    width: 6.25rem;
+}
+span{
+    font-weight: 800;
+    font-size: larger;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fd611a;
+    
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.topFooter{
+    display: flex;
+    background-color: #fd611a;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.topFooter > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.copyright{
+    background-color: #eeeeee;
+    width: 100%;
+    text-align: center;
+}
+.arrepentimiento{
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+
+.socialIcons{
+   display: flex;
+   
+}
+
+@media (max-width: 890px) {
+    .socialIcons {
+        flex-direction: column;
+    }
+  }
+  

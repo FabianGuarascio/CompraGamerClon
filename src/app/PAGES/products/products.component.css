@@ -1,0 +1,43 @@
+
+.container{
+    background-color: #eeeeee;
+    width: 100%;
+}
+.container_product{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    
+}
+app-product{
+    flex-grow: 1;
+}
+.label_categorias{
+    display: none;
+}
+.showbtn{
+    display: none;
+    background-color: #fd611a;
+    width: fit-content;
+}
+
+@media (max-width:1000px) {
+    .container_product{
+        flex-direction: column;
+    }
+    .showbtn{
+        display: block;
+        align-self: center;
+        margin-top: 1em;
+    }
+    app-product-list{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+
+    
+
+    
+}
